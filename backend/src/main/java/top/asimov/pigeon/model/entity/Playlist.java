@@ -29,6 +29,7 @@ public class Playlist extends Feed {
   private String syncError;
   @TableField(updateStrategy = FieldStrategy.ALWAYS)
   private LocalDateTime syncErrorAt;
+  private Integer historyPageIndex;
 
   @Override
   public FeedType getType() {
